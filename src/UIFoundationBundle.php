@@ -6,7 +6,7 @@ namespace SymfonyBundle\UIBundle\Foundation;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class UIBundleFoundation extends Bundle
+class UIFoundationBundle extends Bundle
 {
 
 }
