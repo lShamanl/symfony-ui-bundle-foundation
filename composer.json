@@ -1,6 +1,6 @@
 {
-    "name": "lshamanl/symfony-ui-bundle",
-    "description": "Symfony API-Adapter, UI-Bundle, Filters",
+    "name": "lshamanl/symfony-ui-bundle-foundation",
+    "description": "Symfony UI Bundle Foundation",
     "type": "symfony-bundle",
     "license": "BSD-3-Clause",
     "authors": [
@@ -11,12 +11,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "Bundle\\UIBundle\\": "src/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Bundle\\UIBundle\\Tests\\": "tests/"
+            "SymfonyBundle\\UIBundle\\Foundation\\": "src/"
         }
     },
     "require": {

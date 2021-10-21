@@ -3,14 +3,10 @@ services:
         autowire: true
         autoconfigure: true
 
-    Bundle\UIBundle\:
+    SymfonyBundle\UIBundle\Foundation\:
         resource: '../../../src/*'
         exclude:
             - '../../../src/DependencyInjection/'
 
-    Bundle\UIBundle\Core\Service\ValidatorService:
-        class: Bundle\UIBundle\Core\Service\ValidatorService
-        public: true
-
-    Bundle\UIBundle\Core\Dto\Locale:
+    SymfonyBundle\UIBundle\Foundation\Core\Dto\Locale:
         arguments: [ '%locale%' ]

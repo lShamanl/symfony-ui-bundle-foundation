@@ -2,14 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Bundle\UIBundle\Core\Contract;
+namespace SymfonyBundle\UIBundle\Foundation\Core\Contract;
 
 use Symfony\Component\HttpFoundation\Response;
 use OpenApi\Annotations as OA;
 
-/**
- * UIBundleFoundation
- */
 class ApiFormatter
 {
     /**

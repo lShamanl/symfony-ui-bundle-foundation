@@ -2,11 +2,8 @@
 
 declare(strict_types=1);
 
-namespace Bundle\UIBundle\Core\Dto;
+namespace SymfonyBundle\UIBundle\Foundation\Core\Dto;
 
-/**
- * UIBundleFoundation
- */
 class Locale
 {
     public const DEFAULT_LANG = 'en';

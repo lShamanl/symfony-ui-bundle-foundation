@@ -2,11 +2,8 @@
 
 declare(strict_types=1);
 
-namespace Bundle\UIBundle\Core\Dto;
+namespace SymfonyBundle\UIBundle\Foundation\Core\Dto;
 
-/**
- * UIBundleQuery
- */
 class TranslationDto
 {
     protected array $rules = [];

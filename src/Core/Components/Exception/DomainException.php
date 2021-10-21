@@ -2,13 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Bundle\UIBundle\Core\Components\Exception;
+namespace SymfonyBundle\UIBundle\Foundation\Core\Components\Exception;
 
 use Throwable;
 
-/**
- * UIBundleFoundation
- */
 class DomainException extends UIBundleException
 {
     public function __construct(

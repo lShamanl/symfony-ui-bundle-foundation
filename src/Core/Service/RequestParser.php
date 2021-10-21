@@ -2,23 +2,26 @@
 
 declare(strict_types=1);
 
-namespace Bundle\UIBundle\Core\Service;
+namespace SymfonyBundle\UIBundle\Foundation\Core\Service;
 
 use Symfony\Component\HttpFoundation\Request;
 
-/**
- * UIBundleFoundation
- */
 class RequestParser
 {
     /**
      * @param Request $request
      * @return array<string, string>
+     * @throws \JsonException
      */
     public function parse(Request $request): array
     {
-        $query   = $request->query->all();
-        $content = (array) json_decode((string) $request->getContent(), true);
+        $query = $request->query->all();
+        $content = (array) json_decode(
+            (string) $request->getContent(),
+            true,
+            512,
+            JSON_THROW_ON_ERROR
+        );
         $requestData = $request->request->all();
 
         /** @var array<string, string> $payload */

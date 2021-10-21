@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Bundle\UIBundle;
+namespace SymfonyBundle\UIBundle\Foundation;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class UIBundle extends Bundle
+class UIBundleFoundation extends Bundle
 {
 
 }

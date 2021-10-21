@@ -2,11 +2,8 @@
 
 declare(strict_types=1);
 
-namespace Bundle\UIBundle\Core\Components;
+namespace SymfonyBundle\UIBundle\Foundation\Core\Components;
 
-/**
- * UIBundleFoundation
- */
 abstract class AbstractContext
 {
 

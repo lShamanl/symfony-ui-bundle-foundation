@@ -2,13 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Bundle\UIBundle\Core\Dto;
+namespace SymfonyBundle\UIBundle\Foundation\Core\Dto;
 
-use Bundle\UIBundle\Core\Components\Exception\SystemException;
+use SymfonyBundle\UIBundle\Foundation\Core\Components\Exception\SystemException;
 
-/**
- * UIBundleFoundation
- */
 class OutputFormat
 {
     public const JSON = 'json';

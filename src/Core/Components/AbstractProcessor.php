@@ -2,16 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Bundle\UIBundle\Core\Components;
+namespace SymfonyBundle\UIBundle\Foundation\Core\Components;
 
-use Bundle\UIBundle\Core\Dto\Locale;
+use SymfonyBundle\UIBundle\Foundation\Core\Dto\Locale;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Serializer\SerializerInterface;
 use Symfony\Contracts\Translation\TranslatorInterface;
 
-/**
- * UIBundleFoundation
- */
 abstract class AbstractProcessor implements ProcessorInterface
 {
     protected string $responseContent = '';

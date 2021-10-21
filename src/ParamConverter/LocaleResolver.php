@@ -2,17 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Bundle\UIBundle\ParamConverter;
+namespace SymfonyBundle\UIBundle\Foundation\ParamConverter;
 
-use Bundle\UIBundle\Core\Dto\Locale;
+use SymfonyBundle\UIBundle\Foundation\Core\Dto\Locale;
 use Generator;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpKernel\Controller\ArgumentValueResolverInterface;
 use Symfony\Component\HttpKernel\ControllerMetadata\ArgumentMetadata;
 
-/**
- * UIBundleFoundation
- */
 class LocaleResolver implements ArgumentValueResolverInterface
 {
     public const LOCALE_QUERY_PARAM = 'lang';

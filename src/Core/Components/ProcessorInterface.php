@@ -2,13 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Bundle\UIBundle\Core\Components;
+namespace SymfonyBundle\UIBundle\Foundation\Core\Components;
 
 use Symfony\Component\HttpFoundation\Response;
 
-/**
- * UIBundleFoundation
- */
 interface ProcessorInterface
 {
     public function process(AbstractContext $actionContext): void;
