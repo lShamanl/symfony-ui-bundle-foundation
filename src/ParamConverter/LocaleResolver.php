@@ -49,7 +49,7 @@ class LocaleResolver implements ArgumentValueResolverInterface
             $languages[$i] = str_replace('_', '-', $language);
         }
 
-        $locale->addMany(array_unique($languages));
+        $locale->setLocales(array_unique($languages));
 
         return $locale;
     }

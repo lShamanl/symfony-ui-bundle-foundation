@@ -21,7 +21,7 @@ class Locale
         return !empty($this->locales)
             ? current($this->locales)
             : self::DEFAULT_LANG
-        ;
+            ;
     }
 
     public function getAll(): array
@@ -45,5 +45,10 @@ class Locale
                 $languages
             )
         );
+    }
+
+    public function setLocales(array $locales): void
+    {
+        $this->locales = $locales;
     }
 }
